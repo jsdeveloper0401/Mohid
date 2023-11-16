@@ -1,0 +1,10 @@
+.dark  {
+ background-color: black;
+}
+
+.dark * {
+  color: white !important;
+}
+.dropdown-content{
+  display: none;
+}

@@ -1,0 +1,44 @@
+.team-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+#team-carousel {
+  position: relative;
+}
+
+#team-carousel :is(.owl-prev, .owl-next) {
+  position: absolute;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 0 5px 5px black;
+}
+
+#team-carousel .owl-prev {
+  left: -15px;
+}
+
+#team-carousel .owl-next {
+  right: -15px;
+}
+
+#team-carousel .owl-dot span {
+  width: 30px;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+}
+
+#team-carousel .owl-dot.active span {
+  width: 50px;
+  background: rgb(58, 5, 5);
+}
